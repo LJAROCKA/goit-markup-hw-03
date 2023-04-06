@@ -2,8 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
   margin: auto;
   height: 2349px;
-  background: #ffffff;
-  color: #212121;
+  background: var(--main-background-color);
+  color: var(--main-color-text);
 }
 .wrapper {
   margin: auto;
@@ -11,7 +11,7 @@ body {
 .top {
   background-color: var(--color-text);
   height: 80px;
-  border: 1px solid #ececec;
+  border: 1px solid var(--top-line-color);
 }
 .logo {
   padding-left: 215px;
@@ -27,14 +27,14 @@ body {
   font-family: "Raleway";
   font-weight: 700;
   font-size: var(--font-size-logo);
-  color: var(--background-colour-button);
+  color: var(--background-color-button);
   width: var(--font-size);
 }
 .logo_part2 {
   font-family: "Raleway";
   font-weight: 700;
   font-size: var(--font-size-logo);
-  color: #000000;
+  color: var(--logo-color-bottom);
   width: 145px;
   text-decoration: none;
 }
@@ -47,55 +47,57 @@ body {
   line-height: 1.1875;
 }
 .bottom {
-  background-color: var(--background-colour-bottom);
+  background-color: var(--background-color-bottom);
 }
 .bottom p {
-  background-color: var(--background-colour-bottom);
+  background-color: var(--background-color-bottom);
   color: var(--color-text);
   line-height: 1.71;
 }
 .title {
-  background-color: var(--background-colour-bottom);
+  background-color: var(--background-color-bottom);
   height: 600px;
   color: var(--color-text);
 }
-h1 {
+.main-title {
   font-size: 44px;
   width: 696px;
   height: 120px;
   margin: auto;
-  padding: 200px 452px 0px 452px;
+  padding: 200px 452px 280px 452px;
   text-align: center;
   line-height: 1.36;
-  font-weight: 900px;
+  font-weight: 900;
 }
 .order {
   width: 200px;
   height: 50px;
   color: var(--color-text);
-  background: var(--background-colour-button);
+  background: var(--background-color-button);
   text-align: center;
-  margin: 30px 741px 0px 742px;
+  margin: 30px 741px 210px 742px;
   font-size: var(--font-size-medium);
   line-height: 1.875;
   align-items: center;
   cursor: pointer;
   font-family: inherit;
   font-style: Bold;
-  font-weight: 900px;
+  font-weight: 700;
 }
-button:focus,
-link:focus {
-  background-color: var(--background-colour-button);
+button:focus {
+  background-color: var(--background-color-button);
   color: var(--color-text);
 }
+.link:focus {
+  color: var(--background-color-button);
+}
 button:hover {
-  background-color: var(--background-colour-button);
+  background-color: var(--background-color-button);
   color: var(--color-text);
 }
 .link {
   text-decoration: none;
-  color: #212121;
+  color: var(--main-color-text);
   font-weight: 58px;
   font-size: var(--font-size);
   line-height: 1.14;
@@ -109,19 +111,19 @@ button {
   font-family: inherit;
 }
 .link:hover {
-  color: var(--background-colour-button);
+  color: var(--background-color-button);
 }
-h3 {
+.article-title {
   font-size: var(--font-size);
   color: inherit;
   line-height: 1.14;
 }
-h2 {
+.section-title {
   font-size: 36px;
   color: inherit;
   line-height: 1.166;
 }
-p {
+.text {
   font-size: var(--font-size);
   line-height: 1.71;
 }
@@ -135,7 +137,7 @@ p {
   color: var(--text-color);
   line-height: 1.875;
 }
-address {
+.bottom-contacts {
   font-size: var(--font-size);
   color: var(--color-text);
 }
@@ -148,15 +150,20 @@ address {
   font-size: 18px;
   color: inherit;
   line-height: 2;
+  font-weight: 700;
 }
 :root {
   --text-color: #757575;
   --font-size: 14px;
   --font-size-medium: 16px;
   --font-size-logo: 26px;
-  --background-colour-button: #2196f3;
+  --background-color-button: #2196f3;
   --color-text: #ffffff;
-  --background-colour-bottom: #2f303a;
+  --background-color-bottom: #2f303a;
+  --main-background-color: #ffffff;
+  --main-color-text: #212121;
+  --logo-color-bottom: #000000;
+  --top-line-color: #ececec;
 }
 .contact {
   color: var(--text-color);
