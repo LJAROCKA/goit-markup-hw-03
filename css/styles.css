@@ -1,21 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
-  height: 2349px;
   background: var(--main-background-color);
   color: var(--main-color-text);
 }
 .wrapper {
   margin: auto;
+  justify-content: center;
 }
 .top {
   background-color: var(--color-text);
-  height: 80px;
   border: 1px solid var(--top-line-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
 }
 .logo {
-  padding-left: 215px;
   padding-top: 24px;
+  padding-left: 215px;
   padding-bottom: 25px;
   font-family: "Raleway";
   font-weight: 700;
@@ -58,13 +65,15 @@ body {
   background-color: var(--background-color-bottom);
   height: 600px;
   color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-title {
   font-size: 44px;
   width: 696px;
-  height: 120px;
-  margin: auto;
-  padding: 200px 452px 280px 452px;
+  margin: 0 auto;
+  padding-top: auto;
   text-align: center;
   line-height: 1.36;
   font-weight: 900;
@@ -75,7 +84,6 @@ body {
   color: var(--color-text);
   background: var(--background-color-button);
   text-align: center;
-  margin: 30px 741px 210px 742px;
   font-size: var(--font-size-medium);
   line-height: 1.875;
   align-items: center;
@@ -83,7 +91,11 @@ body {
   font-family: inherit;
   font-style: Bold;
   font-weight: 700;
+  border-radius: 4px;
+  display: block;
+  margin: 0;
 }
+
 button:focus {
   background-color: var(--background-color-button);
   color: var(--color-text);
@@ -102,6 +114,18 @@ button:hover {
   font-size: var(--font-size);
   line-height: 1.14;
   font-weight: 500;
+  padding-right: 46px;
+  display: block;
+  list-style-type: none;
+}
+.link-top {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-weight: 58px;
+  font-size: var(--font-size);
+  line-height: 1.14;
+  display: block;
 }
 button {
   font-size: var(--font-size-medium);
@@ -122,10 +146,14 @@ button {
   font-size: 36px;
   color: inherit;
   line-height: 1.166;
+  padding-bottom: 50px;
+  text-align: center;
 }
 .text {
   font-size: var(--font-size);
   line-height: 1.71;
+
+  gap: 30px;
 }
 .name {
   font-size: var(--font-size-medium);
@@ -136,6 +164,10 @@ button {
   font-size: var(--font-size-medium);
   color: var(--text-color);
   line-height: 1.875;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 4px;
 }
 .bottom-contacts {
   font-size: var(--font-size);
@@ -151,6 +183,9 @@ button {
   color: inherit;
   line-height: 2;
   font-weight: 700;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
 }
 :root {
   --text-color: #757575;
@@ -164,10 +199,88 @@ button {
   --main-color-text: #212121;
   --logo-color-bottom: #000000;
   --top-line-color: #ececec;
+  --color-border-product: #eeeeee;
 }
 .contact {
   color: var(--text-color);
   font-weight: 135px;
   line-height: 1.14;
   font-weight: 500;
+  display: flex;
+  padding-right: 227px;
+  gap: 50px;
+  padding-bottom: 32px;
+  list-style-type: none;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+  padding-right: 364px;
+  padding-left: 93px;
+  padding-bottom: 32px;
+  list-style-type: none;
+}
+.text-box {
+  display: flex;
+  gap: 30px;
+  padding-top: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+  justify-content: center;
+}
+.description {
+  display: block;
+  padding-bottom: 94px;
+}
+.activites {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-right: 30px;
+  padding-left: 215px;
+  padding-bottom: 94px;
+}
+.team-photos {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.button-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 94px 518px 34px 510px;
+  list-style-type: none;
+}
+.line-top {
+  display: flex;
+  justify-content: center;
+  padding-top: 34px;
+  gap: 30px;
+  list-style-type: none;
+}
+.line-center {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+}
+.line-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 94px;
+  list-style-type: none;
+}
+.product-description {
+  border: 1px solid var(--color-border-product);
+  border-top: 0px;
+}
+.bottom-link {
+  list-style-type: none;
+}
+.container {
+  width: 1200px;
 }
