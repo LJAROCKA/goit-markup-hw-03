@@ -5,12 +5,10 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  margin: auto;
   background: var(--main-background-color);
   color: var(--main-color-text);
 }
 .wrapper {
-  margin: auto;
   justify-content: center;
 }
 .top {
@@ -22,7 +20,6 @@ body {
 }
 .logo {
   padding-top: 24px;
-  padding-left: 215px;
   padding-bottom: 25px;
   font-family: "Raleway";
   font-weight: 700;
@@ -52,6 +49,7 @@ body {
 .team {
   background-color: var(--color-text);
   line-height: 1.1875;
+  justify-content: center;
 }
 .bottom {
   background-color: var(--background-color-bottom);
@@ -72,8 +70,6 @@ body {
 .main-title {
   font-size: 44px;
   width: 696px;
-  margin: 0 auto;
-  padding-top: auto;
   text-align: center;
   line-height: 1.36;
   font-weight: 900;
@@ -93,9 +89,7 @@ body {
   font-weight: 700;
   border-radius: 4px;
   display: block;
-  margin: 0;
 }
-
 button:focus {
   background-color: var(--background-color-button);
   color: var(--color-text);
@@ -114,7 +108,6 @@ button:hover {
   font-size: var(--font-size);
   line-height: 1.14;
   font-weight: 500;
-  padding-right: 46px;
   display: block;
   list-style-type: none;
 }
@@ -141,19 +134,19 @@ button {
   font-size: var(--font-size);
   color: inherit;
   line-height: 1.14;
+  padding-bottom: 10px;
 }
 .section-title {
   font-size: 36px;
   color: inherit;
   line-height: 1.166;
-  padding-bottom: 50px;
   text-align: center;
 }
 .text {
   font-size: var(--font-size);
   line-height: 1.71;
-
   gap: 30px;
+  color: var(--text-color);
 }
 .name {
   font-size: var(--font-size-medium);
@@ -164,10 +157,6 @@ button {
   font-size: var(--font-size-medium);
   color: var(--text-color);
   line-height: 1.875;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-top: 4px;
 }
 .bottom-contacts {
   font-size: var(--font-size);
@@ -183,9 +172,7 @@ button {
   color: inherit;
   line-height: 2;
   font-weight: 700;
-  padding-left: 24px;
   padding-top: 20px;
-  padding-bottom: 4px;
 }
 :root {
   --text-color: #757575;
@@ -207,44 +194,39 @@ button {
   line-height: 1.14;
   font-weight: 500;
   display: flex;
-  padding-right: 227px;
+
   gap: 50px;
-  padding-bottom: 32px;
+
   list-style-type: none;
 }
 .menu {
   display: flex;
   justify-content: center;
   gap: 46px;
-  padding-right: 364px;
-  padding-left: 93px;
+
   padding-bottom: 32px;
   list-style-type: none;
 }
 .text-box {
   display: flex;
   gap: 30px;
-  padding-top: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
+
   justify-content: center;
 }
 .description {
   display: block;
-  padding-bottom: 94px;
 }
 .activites {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  padding-right: 30px;
-  padding-left: 215px;
-  padding-bottom: 94px;
+  grid-row-end: 30px;
 }
 .team-photos {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  gap: 30px;
 }
 .button-navigation {
   display: flex;
@@ -254,25 +236,11 @@ button {
   padding: 94px 518px 34px 510px;
   list-style-type: none;
 }
-.line-top {
+.line {
   display: flex;
   justify-content: center;
-  padding-top: 34px;
-  gap: 30px;
   list-style-type: none;
-}
-.line-center {
-  display: flex;
-  justify-content: center;
   gap: 30px;
-  list-style-type: none;
-}
-.line-bottom {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding-bottom: 94px;
-  list-style-type: none;
 }
 .product-description {
   border: 1px solid var(--color-border-product);
@@ -284,4 +252,7 @@ button {
 }
 .container {
   width: 1200px;
+}
+.section {
+  padding-bottom: 94px;
 }
